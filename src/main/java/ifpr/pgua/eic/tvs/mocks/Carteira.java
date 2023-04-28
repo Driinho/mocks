@@ -13,6 +13,17 @@ public class Carteira {
         carteira = new ArrayList<>();
     }
 
+    public int tamanhoCarteira() {
+
+        int tamanho = 0;
+
+        for(Acao acao: carteira) {
+            tamanho += acao.getQuatidade();
+        }
+
+        return tamanho;
+    }
+
     public List<Acao> getCarteira() {
         return carteira;
     }
